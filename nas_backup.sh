@@ -1,6 +1,11 @@
 #!/bin/bash
 
 config="false"
+
+
+if [ "$2" = "delete" ]; then
+echo "WARNING DELETE COMMAND ISSUED"
+fi
  
 if [ "$1" = "hdd" ]; then
 rootdir="/home/chris/nasbackup/rsync/"
@@ -20,6 +25,7 @@ exit 1
 fi
 
 if [ ! -d "$rootdir" ]; then
+	echo "Backup path does not exist. Exit."
 	exit 1
 fi
 
