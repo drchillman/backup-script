@@ -5,7 +5,7 @@ config="false"
 
 if [ "$2" = "delete" ]; then
 echo "WARNING DELETE COMMAND ISSUED"
-echo "Not doing anything about it though... continuing as normal... but one day that might change."
+echo "Not going to do anything about it though... continuing as normal... but one day that might change."
 fi
  
 if [ "$1" = "hdd" ]; then
