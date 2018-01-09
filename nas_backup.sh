@@ -21,7 +21,8 @@ config="true"
 fi
 
 if [ "$config" = "false" ]; then
-echo "Usage: $0 hdd | usb"
+echo "Usage: $0 hdd|usb [delete]"
+echo "Adding argument delete will remove desitation files if they do not exist in the source."
 exit 1
 fi
 
